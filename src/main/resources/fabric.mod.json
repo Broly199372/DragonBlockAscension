@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "dragonblockascension",
+	"version": "${version}",
+	"name": "DragonBlockAscension",
+	"description": "A Fabric mod for DragonBlockAscension.",
+	"authors": [
+		"Broly199372"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Broly199372/DragonBlockAscension"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/dragonblockascension/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.dragonblockascension.DragonBlockAscension"
+		],
+		"client": [
+			"com.dragonblockascension.client.DragonBlockAscensionClient"
+		]
+	},
+	"mixins": [
+		"dragonblockascension.mixins.json",
+		{
+			"config": "dragonblockascension.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
