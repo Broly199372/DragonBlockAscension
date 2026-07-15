@@ -85,10 +85,10 @@ public abstract class KiUtils {
         }
     }
 
-    private void updateKiPercentage() {
-        if (maxKi <= 0.0f) {
-            kiPercentage = 0.0f;
-            return;
-        }
-    }
+   //  private void updateKiPercentage() {
+    //    if (maxKi <= 0.0f) {
+     //       kiPercentage = 0.0f;
+    //       return;
+    //    }
+    
 }
